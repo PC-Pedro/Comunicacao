@@ -24,7 +24,9 @@
     $idade = $_POST ['idade'];
 
     $sql = "INSERT INTO Cadatro.Cadastro(nome,sobrenome,idade) VALUES('$nome','$sobrenome','$idade')";
-    $resultado = mys
+    $resultado = mysqli_query($conexao,$sql);
+
+    echo ">>>>>>> USUARIO CADASTRADO COM SUCESSO <<<<<<<<"
     ?>
     
 </body>
