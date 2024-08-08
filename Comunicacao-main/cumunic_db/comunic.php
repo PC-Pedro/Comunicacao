@@ -12,21 +12,24 @@
     if(!$conexao){
         echo "Não conectado";
     }
+    else{
     echo "Conectado ao banco >>>>>>";
 
-    $nome = $_POST['nome'];
-    $nome = mysqli_real_escape_string($conexao,$nome);
-    $sql = "SELECT nome FROM Cadastro.Cadastro WHERE nome= '$nome'";
+    $nome = isset ($_GET['nome']) ? mysqli_real_escape_string($conexao,$nome):"";
+    $sql = "SELECT nome FROM pessoas WHERE nome= '$nome'";
     $retorno = mysqli_query($conexao,$sql);
 
-    $nome = $_POST ['nome'];
-    $sobrenome = $_POST ['sobrenome'];
-    $idade = $_POST ['idade'];
+    $nome = isset ($_GET['nome']) ? mysqli_real_escape_string($conexao,$nome):"";
+    $sobrenome = isset ($_GET['sobrenome']) ? mysqli_real_escape_string($conexao,$sobrenome):"";
+    $idade = isset ($_GET['idade']) ? (int)$_POST['idade']: 0;
 
-    $sql = "INSERT INTO Cadatro.Cadastro(nome,sobrenome,idade) VALUES('$nome','$sobrenome','$idade')";
-    $resultado = mysqli_query($conexao,$sql);
+    $sql = "INSERT INTO pessoas (nome,sobrenome,idade) VALUES('$nome','$sobrenome','$idade')";
+    if(mysqli_query($conexao,$sql)){
 
-    echo ">>>>>>> USUARIO CADASTRADO COM SUCESSO <<<<<<<<"
+    echo ">>>>>>> USUARIO CADASTRADO COM SUCESSO <<<<<<<<";
+    }
+    echo "<a href= '../envio/form.php'>VOLTAR</a>";
+    }
     ?>
     
 </body>

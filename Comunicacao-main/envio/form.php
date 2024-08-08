@@ -1,3 +1,11 @@
+<?php 
+if(isset($_GET['submit'])){
+
+    print_r($_GET['nome']);
+    print_r($_GET['sobrenome']);
+    print_r($_GET['idade']);
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
