@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $company = new Company($id, $name);
         executeCode($company);
     } else {
+        
         echo "Dados incompletos.";
     }
 } else {

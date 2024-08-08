@@ -11,4 +11,5 @@ def main():
     print(f"Dados recebidos:\nID: {company_id}\nNome: {company_name}")
 
 if __name__ == "__main__":
+    
     main()
