@@ -10,6 +10,7 @@ class Company {
     }
 }
 
+
 function executeCode(Company $company) {
     if (!empty($company->id) && !empty($company->name)) {
         echo "ID da empresa: " . htmlspecialchars($company->id) . "<br>";
