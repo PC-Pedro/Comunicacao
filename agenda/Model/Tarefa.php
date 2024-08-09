@@ -30,11 +30,11 @@ class Tarefa
     function set_data_inicio($data_inicio)
     {$this->data_inicio = $data_inicio;}
     function get_data_inicio()
-    {return $this->id;}
+    {return $this->data_inicio;}
     function set_data_conclusao($data_conclusao)
     {$this->data_conclusao = $data_conclusao;}
     function get_data_conclusao()
-    {return $this->id;}
+    {return $this->data_conclusao;}
     function set_pessoa_id($pessoa_id)
     {$this->pessoa_id = $pessoa_id;}
     function get_pessoa_id()
