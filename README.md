@@ -1,15 +1,18 @@
 # Comunicacao
-Atividade para comunicação 
+
+Atividade para comunicação
 
 ## Padrão desse projeto.
+
 - MVC
-(M) = model
-(V) = view
-(C) = Controller
+  (M) = model
+  (V) = view
+  (C) = Controller
 
 # Obs DAO (data acess Objetc)
 
 ## Arquitetura:
+
 (raiz)
 |-- /agenda
 |---------/Controller
@@ -19,4 +22,3 @@ Atividade para comunicação
 
 |- ./vendor
 |- ./index.php
-
