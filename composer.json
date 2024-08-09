@@ -1,0 +1,32 @@
+{
+    "name": "comunicacao/agenda",
+    "description": "Agenda dos estudantes",
+    "type": "project",
+    "require": {
+        "php": "^8.1"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Comunicacao\\": "agenda/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Comunicacao\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "echo 'Composer install complete!'"
+        ],
+        "post-update-cmd": [
+            "echo 'Composer update complete!'"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
