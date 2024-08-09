@@ -1,7 +1,9 @@
-<?php 
+<?php
 
 namespace Comunicacao\Model;
-class Pessoas{
+
+class Pessoas
+{
 
     private $id;
     private $nome;
@@ -11,12 +13,10 @@ class Pessoas{
 
     function __construct()
     {
-    $this->id = null;
-    $this->nome = null;
-    $this->cpf = null;
-    $this->idade = null;
-    $this->apelido = null;
-
+        $this->id = null;
+        $this->nome = null;
+        $this->cpf = null;
+        $this->idade = null;
+        $this->apelido = null;
     }
-
 }
