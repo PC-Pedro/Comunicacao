@@ -192,4 +192,34 @@ class Conexao
     /**
      * Deleta dados no banco de dados
      */
+
+     public function deletar($dados){
+
+        $db = null;
+
+        try{
+
+            $db = $this->ligarConexao();
+
+            $query = $db->prepare("DELETE FROM {$this->tabela} WHERE {$this->chave_primaria} = :dados");
+            $query->bindParam(':dados', $dados);
+
+            $query->execute();
+
+            return true;
+        } catch (\Throwable $th){
+            throw $th;
+        }
+
+        finally{
+
+            if($db !== null){
+
+                $this->desligarConexao();
+
+            }
+        }
+
+      }
+      
 }
