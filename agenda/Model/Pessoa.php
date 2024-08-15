@@ -2,62 +2,22 @@
 
 namespace Comunicacao\Model;
 
-class Pessoas
-{
+use agenda\DAO\Conexao;
 
-    private $id;
-    private $nome;
-    private $cpf;
-    private $idade;
-    private $apelido;
+class Pessoas extends Conexao
+{
 
     function __construct()
     {
-        $this->id = null;
-        $this->nome = null;
-        $this->cpf = null;
-        $this->idade = null;
-        $this->apelido = null;
+        $this->chave_primaria = 'id';
+        $this->tabela = 'pessoa';
     }
 
-    function set_id($id)
-    {
-        $this->$id = $id;
-    }
-    function get_id()
-    {
-        return $this->id;
-    }
-    function set_nome($nome)
-    {
-        $this->$nome = $nome;
-    }
-    function get_nome()
-    {
-        return $this->id;
-    }
-    function set_cpf($cpf)
-    {
-        $this->$cpf = $cpf;
-    }
-    function get_cpf()
-    {
-        return $this->id;
-    }
-    function set_idade($idade)
-    {
-        $this->$idade = $idade;
-    }
-    function get_idade()
-    {
-        return $this->id;
-    }
-    function set_apelido($apelido)
-    {
-        $this->$apelido = $apelido;
-    }
-    function get_apelido()
-    {
-        return $this->id;
-    }
+    public function
+    buscar_todas_as_pessoas(){
+        $pessoa = $this->buscar();
+        return $pessoa;
+    }    
 }
+
+   
