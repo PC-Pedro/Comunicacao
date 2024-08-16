@@ -20,3 +20,5 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# Ignora, para mim  o config_serve
+./config_serve.php
