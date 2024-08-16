@@ -9,14 +9,9 @@ class Prazo extends Conexao
     function __construct()
     {
         $this->chave_primaria = 'id';
-        $this->tabela = "tarefas";
+        $this->tabela = "prazos";
     }
 
-    /**
-     * Busca todas as tarefas, dentro do banco de dados
-     *
-     * @return array
-     */
     public function buscar_todos_os_prazos(){
         $tarefas = $this->buscar();
         return $tarefas;
