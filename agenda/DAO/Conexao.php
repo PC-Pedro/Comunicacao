@@ -8,11 +8,11 @@ class Conexao
 {
 
     private $conexao = null;
-    private $bancoNome = "agenda";
-    private $endereco = "localhost";
-    private $usuario = "root";
-    private $senha = "122436";
-    private $porta = "3306";
+    private $bancoNome = DB['banco'];
+    private $endereco = DB['host'];
+    private $usuario = DB['user'];
+    private $senha = DB['pass'];
+    private $porta = DB['porta'];
     public $tabela = null;
     public $chave_primaria = null;
 
