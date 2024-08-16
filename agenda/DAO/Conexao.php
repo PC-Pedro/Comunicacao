@@ -2,6 +2,7 @@
 
 namespace Comunicacao\DAO;
 
+use Exception;
 use PDO;
 
 class Conexao
@@ -192,5 +193,29 @@ class Conexao
 
     /**
      * Deleta dados no banco de dados
+     * @param array $parametros
+     *  ['coluna_a' => 'valor_a', 'coluna_b' => 'valor_b']
      */
+    function deletar($parametros = [])  {
+        
+
+        if(count($parametros) <= 0){
+            return ['status' => 'error', 'msg' => 'Parametros obrigatórios', 'data' => []];
+        }
+
+        try {
+            $query_where = " WHERE ";
+            foreach ($parametros as $coluna => $valor) {
+                $query_where .= "$coluna= :{$valor}, AND ";
+            }
+            # Remove o último AND existente da string.
+            $query_where = rtrim($query_where, " AND ");
+
+            ## Aqui é onde o PEDRO VAI CRIAR RESTO DO MÉTODO.SQL
+
+        }
+        catch(Exception $e){
+            return ['status' => 'error', 'msg' => $e->getMessage(), 'data' => []];
+        }
+    }
 }

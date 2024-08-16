@@ -1,7 +1,7 @@
 <?php
 namespace Comunicacao\Model;
 
-use agenda\DAO\Conexao;
+use Comunicacao\DAO\Conexao;
 
 class Tarefa extends Conexao
 {
@@ -21,4 +21,16 @@ class Tarefa extends Conexao
         $tarefas = $this->buscar();
         return $tarefas;
     }    
+    public function buscar_tarefas_por_id($id){
+        $tarefas = $this->buscar([$this->chave_primaria => $id]);
+        return $tarefas;
+    } 
+    
+    public function salvar_tarefa($dados)  {
+        return $this->inserir($dados);
+    }
+    public function deletar_por_id($id){
+        return $this->deletar([$this->chave_primaria => $id]);
+    }
+
 }
