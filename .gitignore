@@ -21,4 +21,4 @@ rad.json
 #Test results file
 TestResults.xml
 # Ignora, para mim  o config_serve
-./config_serve.php
+config_serve.php
