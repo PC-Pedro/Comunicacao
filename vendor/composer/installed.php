@@ -3,7 +3,7 @@
         'name' => 'comunicacao/agenda',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'cc016a25176ead69cd6c6d2d63b0ea785725eb46',
+        'reference' => '05c87e2bd2317ae4bb521cbd2d3b4d50ee875492',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'comunicacao/agenda' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'cc016a25176ead69cd6c6d2d63b0ea785725eb46',
+            'reference' => '05c87e2bd2317ae4bb521cbd2d3b4d50ee875492',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

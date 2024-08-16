@@ -2,9 +2,9 @@
 
 namespace Comunicacao\Model;
 
-use agenda\DAO\Conexao;
+use Comunicacao\DAO\Conexao;
 
-class Pessoas extends Conexao
+class Pessoa extends Conexao
 {
 
     function __construct()

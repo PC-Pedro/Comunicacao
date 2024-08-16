@@ -1,6 +1,6 @@
 <?php
 
-namespace agenda\DAO;
+namespace Comunicacao\DAO;
 
 use PDO;
 
@@ -103,6 +103,7 @@ class Conexao
              * Coluna = nome 
              * dados = "Pedro"
              */
+            
             $recebe_dados = "";
             foreach ($dados as $colunas => $valor) {
                 //adiciona o nome da coluna a string colunas
@@ -115,7 +116,7 @@ class Conexao
             }
 
             //script SQL para inserir dados
-            $inserir = ("INSERT INTO {$this->tabela} $recebe_dados");
+            $inserir = ("INSERT INTO {$this->tabela} $recebe_dados VALUE $prepara_para_inserir");
             //prepara para inserir dados
             $stmt = $db->prepare($inserir);
             //executa 
