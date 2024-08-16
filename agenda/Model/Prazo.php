@@ -1,56 +1,36 @@
 <?php
-
 namespace Comunicacao\Model;
 
-class Prazo
+use Comunicacao\DAO\Conexao;
+
+class Prazo extends Conexao
 {
 
-    private $id;
-    private $hora;
-    private $conclusao;
-    private $tarefa_id;
-
     function __construct()
-
     {
-
-        $this->id = null;
-        $this->hora = null;
-        $this->conclusao = null;
-        $this->tarefa_id = null;
+        $this->chave_primaria = 'id';
+        $this->tabela = "tarefas";
     }
 
-    function set_id($id)
-    {
-        $this->id = $id;
-    }
-    function get_id()
-    {
-        return $this->id;
-    }
-    function set_hora($hora)
-    {
-        $this->hora = $hora;
-    }
-    function get_hora()
-    {
-        return $this->id;
-    }
-    function set_coclusao($conclusao)
-    {
-        $this->conclusao = $conclusao;
-    }
-    function get_conclusao()
-    {
-        return $this->id;
-    }
-    function set_tarefa_id($tarefa_id)
-    {
-        $this->tarefa_id = $tarefa_id;
-    }
-    function get_tarefa_id()
-    {
-        return $this->id;
-    }
+    /**
+     * Busca todas as tarefas, dentro do banco de dados
+     *
+     * @return array
+     */
+    public function buscar_todos_os_prazos(){
+        $tarefas = $this->buscar();
+        return $tarefas;
+    }    
+    public function buscar_prazo_por_id($id){
+        $tarefas = $this->buscar([$this->chave_primaria => $id]);
+        return $tarefas;
+    } 
     
+    public function salvar_prazo($dados)  {
+        return $this->inserir($dados);
+    }
+    public function deletar_por_id($id){
+        return $this->deletar([$this->chave_primaria => $id]);
+    }
+
 }
