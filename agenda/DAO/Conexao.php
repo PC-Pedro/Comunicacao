@@ -211,7 +211,7 @@ class Conexao
             # Remove o último AND existente da string.
             $query_where = rtrim($query_where, " AND ");
 
-            ## Aqui é onde o PEDRO VAI CRIAR RESTO DO MÉTODO.SQL
+            
 
         }
         catch(Exception $e){
