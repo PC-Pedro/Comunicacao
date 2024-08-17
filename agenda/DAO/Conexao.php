@@ -197,13 +197,22 @@ class Conexao
      *  ['coluna_a' => 'valor_a', 'coluna_b' => 'valor_b']
      */
     function deletar($parametros = [])  {
-        
 
+        
+        
         if(count($parametros) <= 0){
             return ['status' => 'error', 'msg' => 'Parametros obrigatórios', 'data' => []];
         }
 
         try {
+
+            $db = $this->ligarConexao();
+
+        if ($this->tabela == null) {
+            $this->desligarConexao();
+            return ['status' => 'error', 'msg' => 'Tabela não definida', 'data' => []];
+        }
+
             $query_where = " WHERE ";
             foreach ($parametros as $coluna => $valor) {
                 $query_where .= "$coluna= :{$valor}, AND ";
@@ -211,10 +220,27 @@ class Conexao
             # Remove o último AND existente da string.
             $query_where = rtrim($query_where, " AND ");
 
-            
+            $sql = "DELETE FROM {$this->tabela} $query_where";
 
+        $stmt = $db->prepare($sql);
+
+        $parametros_binding = [];
+        foreach ($parametros as $coluna => $valor) {
+            $parametros_binding[":$coluna"] = $valor;
         }
+        
+        $stmt->execute($parametros_binding);
+
+        $this->desligarConexao();
+
+        $deu_certo = $stmt->rowCount();
+        return ['status' => $deu_certo ? 'sucesso' : 'error', 'msg' => $deu_certo ? 'Dados deletados com sucesso' : 'Erro ao deletar dados', 'data' => []];
+    } 
         catch(Exception $e){
+
+            if (isset($db)) {
+                $this->desligarConexao();
+            }
             return ['status' => 'error', 'msg' => $e->getMessage(), 'data' => []];
         }
     }
