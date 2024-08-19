@@ -220,19 +220,24 @@ class Conexao
             # Remove o último AND existente da string.
             $query_where = rtrim($query_where, " AND ");
 
+            //Cria a string SQL que será executada para deletar registros
             $sql = "DELETE FROM {$this->tabela} $query_where";
-
+        //Prepara o querry para ser executado    
         $stmt = $db->prepare($sql);
 
+        //Cria um array associativo que mapeia placeholders para valores reais
         $parametros_binding = [];
         foreach ($parametros as $coluna => $valor) {
             $parametros_binding[":$coluna"] = $valor;
         }
         
+        //Executa o querry
         $stmt->execute($parametros_binding);
 
+        //Desliga a conexão
         $this->desligarConexao();
-
+ 
+        
         $deu_certo = $stmt->rowCount();
         return ['status' => $deu_certo ? 'sucesso' : 'error', 'msg' => $deu_certo ? 'Dados deletados com sucesso' : 'Erro ao deletar dados', 'data' => []];
     } 
