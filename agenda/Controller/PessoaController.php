@@ -2,7 +2,7 @@
 
 namespace Comunicacao\Controller;
 
-use Comunicacao\Model\Tarefa;
+use Comunicacao\Model\Pessoa;
 use Controller;
 
 class PessoaController extends Controller{
@@ -33,13 +33,13 @@ class PessoaController extends Controller{
         if(isset($pessoa_a_ser_deletada['id'])){
 
             if($pessoa->deletar_por_id($pessoa_a_ser_deletada['id'])){
-                return self::retornoJson("success", "Tarefa deletada com sucesso.", $pessoa_a_ser_deletada);
+                return self::retornoJson("success", "Pessoa deletada com sucesso.", $pessoa_a_ser_deletada);
             }else{
-                return self::retornoJson("error", "Erro ao deletar tarefa.", $pessoa_a_ser_deletada);
+                return self::retornoJson("error", "Erro ao deletar pessoa.", $pessoa_a_ser_deletada);
             }
 
         }
-        return self::retornoJson("error", "Erro não encontrada tarefa.");
+        return self::retornoJson("error", "Erro não encontrada pessoa.");
         
 
     }
