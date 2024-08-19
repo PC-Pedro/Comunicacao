@@ -15,7 +15,7 @@
 <main>
   <selection>
 
-    <form action="index.php" method="get">
+    <form action="agenda.php" method="get">
         <label for="nome">Nome</label>
         <input type="text" name = "nome" id = "idnome">
         <label for="cpf">CPF</label>
@@ -29,8 +29,5 @@
   </selection> 
   <button onclick="javascript:window.location.href='index.php'">&#x1F504; Voltar</button>
   </main>
-</body>
-</html>
-    
 </body>
 </html>
