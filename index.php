@@ -1,16 +1,39 @@
-<?php
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📒 Agenta</title>
+    <style>
 
-require_once __DIR__ . '/vendor/autoload.php';
+        body, html{
 
-use Comunicacao\Model\Pessoa;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
 
-$pessoa = new Pessoa();
+        div#area{
 
-$nova_pessoa = [
-    'nome' => 'Pedro',
-    'cpf' => 12345678910 ,
-    'idade' => 19,
-    'apelido' => 'Pedro',
-];
-var_dump($pessoa->inserir($nova_pessoa));
+        background-color: black;
+        color: rgb(152, 255, 152);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        text-align: left;
+        padding: 20px;
+        font-size: 30px;
+        /*precisa trocar a fonte*/
+        font-family: 'Courier New', Courier, monospace;
+        }
 
+    </style>
+</head>
+<body>
+
+<div id="area">Agenda</div>
+
+
+    
+</body>
+</html>
