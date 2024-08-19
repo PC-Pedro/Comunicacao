@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="agenda.css">
 </head>
 <body>
+<div>
 <header>
     <h1>Agenda</h1>
 </header>
+</div>
+<main>
   <selection>
+
     <form action="index.php" method="get">
         <label for="nome">Nome</label>
         <input type="text" name = "nome" id = "idnome">
@@ -23,6 +27,8 @@
         <input type="submit" value="Enviar">
     </form>
   </selection> 
+  <button onclick="javascript:window.location.href='index.php'">&#x1F504; Voltar</button>
+  </main>
 </body>
 </html>
     
