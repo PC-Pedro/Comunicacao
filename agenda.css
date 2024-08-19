@@ -63,6 +63,7 @@ input[type=submit] {
     background-color: rgb(5, 238, 5);
     color: #000000;
     border: none;
+    float: center;
     border-radius: 30px;
     cursor: pointer;
     text-decoration: none;
@@ -98,6 +99,7 @@ input[type=button], button {
     background-color: rgb(226, 14, 14);
     color: #000000;
     border: none;
+    margin: 20px;
     border-radius: 30px;
     cursor: pointer;
     text-decoration: none;
