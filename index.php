@@ -10,7 +10,7 @@
 
 <div id="area">Agenda</div>
 
-<div class="container">
+<div class="button-container">
     <a href="form.php">
         <input type="submit" value="Ir para Cadastro">
     </a>
