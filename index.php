@@ -12,7 +12,7 @@
 
 <div class="container">
     <a href="form.php">
-        <button>Ir para tela de Cadastro</button>
+        <input type="submit" value="Ir para Cadastro">
     </a>
 </div>
     
