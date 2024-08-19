@@ -15,12 +15,12 @@
 <table>
     <h1>Tarefas<h2>
 
-<th>Tarefas</th>
-<th>Data de inicio</th>
-<th>Data de conclusão</th>
-<th>Prazos</th>
-<th>Horario</th>
-<th>Status</th>
+<th>Tarefas<br></th>
+<th>Data de inicio<br></th>
+<th>Data de conclusão<br></th>
+<th>Prazos<br></th>
+<th>Horario<br></th>
+<th>Status<br></th>
 
 </table>
 

@@ -111,3 +111,10 @@ input[type=button]:hover, button:hover {
     transform: scale(1.05);
 }
 
+table th {
+    background-color: #372991;
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+
