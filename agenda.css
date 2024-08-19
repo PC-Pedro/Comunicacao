@@ -138,3 +138,22 @@ table.divisao td {
     font-size: 2.5em;
 }
 
+label {
+    display: block;
+    width: fit-content;
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 3px 7px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+li{
+    display: inline-block;
+    background-color: #cec9c9;
+    padding: 10px;
+    margin: 2px;
+
+}
