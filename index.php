@@ -22,7 +22,7 @@
         display: flex;
         text-align: left;
         padding: 20px;
-        font-size: 30px;
+        font-size: 50px;
         /*precisa trocar a fonte*/
         font-family: 'Courier New', Courier, monospace;
         }
@@ -40,13 +40,23 @@
             background-color: rgb(152, 255, 152);
             color: #333;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
             text-decoration: none;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: backgroud 0.3s, box-shadow 0.3s, transform 0.3s;
         }
 
         button:hover {
             background-color: rgb(102, 204, 102);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        button:focus{
+
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 204, 102, 0.5);
         }
 
     </style>
