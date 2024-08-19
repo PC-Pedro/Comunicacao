@@ -237,7 +237,7 @@ class Conexao
         //Desliga a conexão
         $this->desligarConexao();
  
-        
+        //Verifica as linha afetadas
         $deu_certo = $stmt->rowCount();
         return ['status' => $deu_certo ? 'sucesso' : 'error', 'msg' => $deu_certo ? 'Dados deletados com sucesso' : 'Erro ao deletar dados', 'data' => []];
     } 
