@@ -7,6 +7,14 @@ body{
     height: 100vh;
     
 }
+@font-face {
+    font-family: 'Signika';
+    src: url('../fontes/Signika/Signika-VariableFont_GRAD\,wght.ttf');
+}
+
+h1{
+    font-family: 'Signika', sans-serif;
+}
 
 .button-container {
     display: flex;
@@ -23,8 +31,6 @@ display: flex;
 text-align: left;
 padding: 20px;
 font-size: 30px;
-/*precisa trocar a fonte*/
-font-family: 'Courier New', Courier, monospace;
 }
 
 form {
