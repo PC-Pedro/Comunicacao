@@ -3,7 +3,7 @@
  * Aqui ficará tudo que é relacionado a comunicação dentro do projeto
  */
 
- define('URL', 'http://localhost/agenda/');
+ define('URL', 'http://localhost/Comunicacao/');
  define('ASSETS', URL.'public/assets/');
  define('TITULO_DO_PROJETO', '..:: AGENDA ::..');
 
