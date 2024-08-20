@@ -3,6 +3,10 @@
  * Aqui ficará tudo que é relacionado a comunicação dentro do projeto
  */
 
+ define('URL', 'http://localhost/agenda/');
+ define('ASSETS', URL.'public/assets/');
+ define('TITULO_DO_PROJETO', '..:: AGENDA ::..');
+
 define("DB",[
     'driver' => 'mysql',
     'host' => 'localhost',
