@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📒 Agenda</title>
-    <link rel="stylesheet" href="agenda.css">
-</head>
-<body>
+<?php
+// Preciso desse arquivo para funcionar.
+require '../vendor/autoload.php';
+require_once './config_serve.php';
 
-<div id="area">Agenda</div>
-
-<div class="button-container">
-    <a href="form.php">
-        <input type="submit" value="Ir para Cadastro">
-    </a>
-</div>
-    
-</body>
-</html>
+// Preciso que inclua o arquivo;
+include_once './View/home/index.php';

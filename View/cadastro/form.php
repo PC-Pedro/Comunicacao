@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda</title>
-    <link rel="stylesheet" href="agenda.css">
-</head>
-<body>
-<div>
-<header>
-    <h1>Agenda</h1>
-</header>
-</div>
-<main>
+<?php include_once '../templates/cabecalho.php'; ?>
+
   <selection>
 
     <form action="agenda.php" method="get">
@@ -27,7 +14,5 @@
         <input type="submit" value="Enviar">
     </form>
   </selection> 
-  <button onclick="javascript:window.location.href='index.php'">&#x1F504; Voltar</button>
-  </main>
-</body>
-</html>
+
+<?php include_once '../templates/rodape.php'; ?>
