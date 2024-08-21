@@ -8,9 +8,38 @@
 
 <!-- código html aqui -->
 
-    <div class="row text-center bg-danger">
-        <h1>Agenda</h1>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div  id="navbar" class="container-fluid">
+    <a class="navbar-brand" href="#">Agenda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
+
     <div class="row text-center justyfi-aling-center">
         <div class="col-1"></div>
         <div class="col-2">
@@ -28,48 +57,23 @@
 <!-- codigo css customizado aqui -->
  <style>
 
+    div#navbar{
+
+        background-color: rgba(10, 10, 10, 0.1);
+    }
+
+    div#navbarNavDropdown{
+
+        position: absolute;
+        left: 70%;
+    }
+/*
     body{
-        background-color: rgb(10, 10, 10);
-    }
-    @font-face {
-    font-family: 'Signika';
-    src: url('../fontes/Signika/Signika-VariableFont_GRAD\,wght.ttf');
-}
 
-h1{
-    font-family: 'Signika', sans-serif;
-    color: greenyellow;
-    
-}
-
-    .bg-danger {
-    
-        background-color: rgb(50, 50, 50) !important;
+        background-color: rgb(50, 50, 50);
     }
-    
-    input[type=submit] {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: rgb(5, 238, 5);
-    color: #000000;
-    border: none;
-    float: center;
-    border-radius: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    transition: backgroud 0.3s, box-shadow 0.3s, transform 0.3s;
-    position: absolute;
-    top: 10%;
-    left: 47%;
-    transform: translate(-10%, -10%);
-}
-  
-input[type=submit]:hover {
-    background-color: rgb(102, 204, 102);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-}
+*/
+
  </style>
 <!-- ./codigo css aqui -->
 
