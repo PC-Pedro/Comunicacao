@@ -29,17 +29,22 @@
  <style>
 
     body{
-        background-color: rgb(20, 20, 20);
+        background-color: rgb(10, 10, 10);
     }
+    @font-face {
+    font-family: 'Signika';
+    src: url('../fontes/Signika/Signika-VariableFont_GRAD\,wght.ttf');
+}
 
-    h1{
-        color: rgb(5, 238, 5);
-    }
+h1{
+    font-family: 'Signika', sans-serif;
+    color: greenyellow;
+}
 
     .bg-danger {
 
     
-        background-color: blueviolet !important;
+        background-color: rgb(50, 50, 50) !important;
     }
     
     input[type=submit] {
