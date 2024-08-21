@@ -1,7 +1,7 @@
 
 <!-- código php aqui -->
  <?php
-  
+  //adicionar navbar
  ?>
 <!-- ./código php aqui -->
 
@@ -39,10 +39,10 @@
 h1{
     font-family: 'Signika', sans-serif;
     color: greenyellow;
+    
 }
 
     .bg-danger {
-
     
         background-color: rgb(50, 50, 50) !important;
     }
