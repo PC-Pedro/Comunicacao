@@ -2,18 +2,20 @@
   <selection>
   <h1>Cadastre-se</h1>
 
-    <form action="agenda.php" method="get">
-        <label for="nome">Nome</label>
-        <input type="text" name = "nome" id = "idnome">
-        <label for="cpf">CPF</label>
-        <input type="text" name = "cpf" id = "idcpf">
-        <label for="idade">Idade</label>
-        <input type="number" name="idade" id="ididade">
-        <label for = "apelido">Apelido</label>
-        <input type="text" name="apelido" id="idapelido">
-        <input type="submit" value="Enviar">
-    </form>
-  </selection> 
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, pariatur! Nemo quibusdam, dolore ipsum vel modi distinctio quo, doloremque eveniet voluptatum minima libero accusantium unde. Obcaecati vel cumque amet doloribus.
+
+  <form>
+  
+    <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+      <input type="Nome" class="form-control" id="Nome">
+    <label for="CPF" class="col-sm-2 col-form-label">CPF</label>
+      <input type="text" class="form-control" id="CPF">
+    <label for="Idade" class="col-sm-2 col-form-label">Idade</label>
+      <input type="number" class="form-control" id="Idade">
+      <label for="Apelido" class="col-sm-2 col-form-label">Apelido</label>
+      <input type="number" class="form-control" id="Apelido">
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
 
   <style>
 
@@ -23,15 +25,6 @@ margin: 0;
 padding: 0;
 height: 100vh;
 
-}
-
-@font-face {
-    font-family: 'Signika';
-    src: url('../fontes/Signika/Signika-VariableFont_GRAD\,wght.ttf');
-}
-
-h1{
-    font-family: 'Signika', sans-serif;
 }
 
 .button-container {
@@ -51,29 +44,9 @@ padding: 20px;
 font-size: 30px;
 }
 
-form {
-    margin-top: 50px;
-    background-color: black;
-    padding: 15px;
-    border-radius: 10px;
-    display: grid;
-    place-items: right;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-form label {
-    display: block;
-    width: fit-content;
-    font-size: 0.8em;
-    font-weight: 100;
-    color: black;
-    background-color: lightgray;
-    padding: 3px 7px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    border-radius: 5px;
-}
   </style>
+
+  <script>
+
+        
