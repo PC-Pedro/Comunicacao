@@ -26,7 +26,7 @@
           <a class="<?= URL."index.php?pg=cadastro-pessoa"?>" href="#">Features</a>
         </li>
         <li class="nav-item">
-          <a class="<?= URL."index.php?pg=home"?>" href="#">Pricing</a>
+          <a class="<?= URL."index.php?pg=home"?>" href="#">Pricing</a>´
         </li>
         <li class="nav-item dropdown">
           <a class="<?= URL."index.php?pg=home"?>" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
