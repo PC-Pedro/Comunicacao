@@ -1,10 +1,13 @@
-<?php
-require_once '../../config_serve.php';
-include_once '../templates/cabecalho.php';
 
-?>
+<!-- código php aqui -->
+ <?php
+  
+ ?>
+<!-- ./código php aqui -->
 
-<div class="container">
+
+<!-- código html aqui -->
+
     <div class="row text-center bg-danger">
         <h1 class="text-white">Agenda</h1>
     </div>
@@ -13,19 +16,24 @@ include_once '../templates/cabecalho.php';
         <div class="col-2">
 
             <div class="button-container">
-                <a href="../cadastro/pessoa.php">
+                <a href="<?= URL?>/index.php?pg=cadastro-pessoa">
                     <input type="submit" class="btn btn-primary" value="Ir para Cadastro">
                 </a>
             </div>
         </div>
     </div>
-</div>
+<!-- ./código html aqui -->
 
 
+<!-- codigo css customizado aqui -->
+ <style>
 
+ </style>
+<!-- ./codigo css aqui -->
 
+<!-- codigo js aqui -->
+ <script>
 
+ </script>
+<!-- ./codigo js aqui -->
 
-<?php
-include_once '../templates/rodape.php';
-?>  
