@@ -4,8 +4,11 @@
 
     
     <div class="col-6" id="descricao">
-
-      <p class="mt-5">ipsum dolor sit amet consectetur adipisicing elit. Vitae, pariatur! Nemo quibusdam, dolore ipsum vel modi distinctio quo, doloremque eveniet voluptatum minima libero accusantium unde. Obcaecati vel cumque amet doloribus.</p>
+       <h1 id="descricao"> Seja bem vindo(a) ao nosso site!</h1>
+      <p class="mt-2">
+        O seu cadastro é importante, para sabermos quem está realizando ou realizou a tarefa, também é importante para você saber qual tarefa deve ser feita e para não perder suas tarefas adicionadas.<br>
+    </p>
+    <h2>Agradecemos a sua preferência!</h2>
     </div>
     <div class="col-6">
       <div class="row justify-content-end">
@@ -36,6 +39,13 @@
   <style>
     h1 {
       color: white;
+    }
+    h1#descricao{
+      font-size: 30pt;
+    }
+    h2{
+      color: white;
+      font-size: 20pt;
     }
 
     p {
