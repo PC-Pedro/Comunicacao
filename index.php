@@ -11,7 +11,7 @@ $pagina = isset($_GET['pg']) ? $_GET['pg'] : 'login';
 include_once './View/templates/cabecalho.php';
 
 switch ($pagina) {
-    case 'login': include_once './View/login/index.php'; break;
+    case 'login': header("Location:".URL."View/login/index.php")  ;break;
     case 'home': include_once './View/home/index.php'; break;
     case 'cadastro-pessoa': include_once './View/cadastro/pessoa/index.php'; break;
     case 'cadastro-prazo': include_once './View/cadastro/prazo/index.php'; break;

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang='pt-br'>
 <head>
@@ -27,7 +28,11 @@
           <a class="" href="<?= URL."index.php?pg=cadastro-pessoa"?>">Features</a>
         </li>
         <li class="nav-item">
+<<<<<<< HEAD
           <a class="" href="<?= URL."index.php?pg=home"?>">Pricing</a>
+=======
+          <a class="<?= URL."index.php?pg=home"?>" href="#">Pricing</a>
+>>>>>>> b41de92 (#main# implementando interface e códigos  a tela de login)
         </li>
         <li class="nav-item dropdown">
           <a class="" href="<?= URL."index.php?pg=home"?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
