@@ -25,18 +25,18 @@
           <a class="" aria-current="page" href="<?= URL."index.php?pg=home"?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="" href="<?= URL."index.php?pg=cadastro-pessoa"?>">Features</a>
+          <a class="" href="<?= URL."index.php?pg=cadastro-pessoa"?>">Cadastro</a>
         </li>
         <li class="nav-item">
-          <a class=" href='<?= URL."index.php?pg=home"?>">Pricing</a>
+          <a class="" href="<?= URL."index.php?pg=login"?>">Login</a>
         </li>
         <li class="nav-item dropdown">
           <a class="" href="<?= URL."index.php?pg=home"?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
+            Mais opções
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="<?= URL."index.php?pg=cadastro-tarefa"?>">Tarefa</a></li>
+            <li><a class="dropdown-item" href="<?= URL."index.php?pg=cadastro-prazo"?>">Prazo</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
