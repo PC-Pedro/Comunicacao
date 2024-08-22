@@ -1,38 +1,5 @@
 @charset "UTF-8";
 
-body{
-
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    
-}
-@font-face {
-    font-family: 'Signika';
-    src: url('../fontes/Signika/Signika-VariableFont_GRAD\,wght.ttf');
-}
-
-h1{
-    font-family: 'Signika', sans-serif;
-}
-
-.button-container {
-    display: flex;
-    gap: 10px;
-}
-
-div{
-
-background-color: black;
-color: rgb(152, 255, 152);
-width: 100%;
-height: 100px;
-display: flex;
-text-align: left;
-padding: 20px;
-font-size: 30px;
-
-}
 
 form {
     background-color: rgb(255, 255, 255);

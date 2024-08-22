@@ -1,0 +1,23 @@
+.container-fluid-button{
+
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    
+    }
+    
+    div#navbar{
+    
+    background-color: rgba(10, 10, 10, 0.2);
+    
+    }
+   
+    .navbar-nav .nav-item {
+      margin-right: 15px; 
+    }
+
+    body{
+
+        background-color: rgb(50, 50, 50);
+        
+    }
