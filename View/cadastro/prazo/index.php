@@ -54,9 +54,9 @@
     h1{
         color: white;
     }
-    th,
-    td {
-        border: 1px solid #dddddd;
+    th
+     {
+     
         color: #f2f2f2;
     }
 
