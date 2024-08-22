@@ -39,8 +39,6 @@ h1{
 }
 input[type=submit]{
 
-  background-color: greenyellow;
-  color: black;
   position: absolute;
   top: 60%;
   left: 45%;
