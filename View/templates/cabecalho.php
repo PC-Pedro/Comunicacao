@@ -32,7 +32,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="" href="<?= URL."index.php?pg=home"?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Mais opções
+            Tabelas
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?= URL."index.php?pg=cadastro-tarefa"?>">Tarefa</a></li>

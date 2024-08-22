@@ -23,7 +23,7 @@
         text-align: center;
     }
     table {
-        width: 80%;
+        width: 50%;
         margin: 20px auto;
         border-collapse: collapse;
     }
@@ -48,8 +48,8 @@
     div#table {
 
         position: absolute;
-        top: 10%;
-        left: 20%;
+        top: 20%;
+        left: 30%;
         width: 80%;
         margin: 20px auto;
         border-collapse: collapse;
@@ -87,7 +87,7 @@
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         transition: backgroud 0.3s, box-shadow 0.3s, transform 0.3s;
         position: absolute;
-        top: 100%;
+        top: 110%;
         right: 50%;
         transform: translate(-10%, -10%);
     }
