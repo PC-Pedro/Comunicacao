@@ -18,6 +18,8 @@ require_once '../../config_serve.php';
     }
 
     h1 {
+      margin-top: 40px;
+      color: #f2f2f2;
       text-align: center;
     }
 
@@ -101,6 +103,9 @@ require_once '../../config_serve.php';
       border: 1px solid #ccc;
       border-radius: 4px;
       box-sizing: border-box;
+    }
+    body{
+      background-color: rgb(50,50,50);
     }
   </style>
 
